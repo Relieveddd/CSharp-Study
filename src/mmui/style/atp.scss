@@ -1,0 +1,42 @@
+@import "./var.scss";
+
+$p: ".#{$prefix}-atp";
+
+#{$p} {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  #{$p}-action {
+    display: flex;
+    justify-content: space-between;
+    &-left {
+      > * {
+        margin-right: 8px;
+      }
+    }
+    &-right {
+      > * {
+        margin-left: 8px;
+      }
+    }
+  }
+  #{$p}-table {
+    flex: 1;
+    overflow: auto;
+    margin-top: 16px;
+  }
+  #{$p}-pagination {
+    margin-top: 16px;
+    display: flex;
+    &_center {
+      justify-content: center;
+    }
+    &_right {
+      justify-content: flex-end;
+    }
+  }
+  #{$p}-bottom {
+    margin-top: 16px;
+    max-height: 50%;
+  }
+}

@@ -1,0 +1,69 @@
+@import "./var.scss";
+
+$p: ".#{$prefix}-form-item";
+
+#{$p} {
+  margin-bottom: 6px;
+  display: flex;
+  line-height: 40px;
+  #{$p}-label {
+    flex: none;
+    font-size: 14px;
+    margin-right: 8px;
+    text-align: right;
+  }
+  #{$p}-container {
+    flex: 1;
+    #{$p}-content {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      height: 40px;
+      .el-cascader,
+      .el-select,
+      .el-autocomplete,
+      .el-date-editor {
+        flex: 1;
+      }
+      .el-checkbox-group {
+        height: 100%;
+      }
+    }
+    #{$p}-tip {
+      margin-top: 4px;
+      font-size: 12px;
+      height: 1em;
+      line-height: 1;
+    }
+  }
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  &.error {
+    .el-input__inner,
+    .el-input__inner:focus {
+      border-color: #f56c6c;
+    }
+    #{$p}-tip {
+      color: #f56c6c;
+    }
+  }
+  &.mini {
+    line-height: 28px;
+    #{$p}-content {
+      height: 28px;
+    }
+  }
+  &.small {
+    line-height: 32px;
+    #{$p}-content {
+      height: 32px;
+    }
+  }
+  &.medium {
+    line-height: 36px;
+    #{$p}-content {
+      height: 36px;
+    }
+  }
+}
