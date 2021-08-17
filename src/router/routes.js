@@ -224,6 +224,14 @@ let routes = [
 			  component: () => import("@/views/companyListSyzn")
 			},
 			{
+			  path: "duijiepingtai",
+			  name: "duijiepingtai",
+			  meta: {
+			    title: "对接平台"
+			  },
+			  component: () => import("@/views/duijiepingtai")
+			},
+			{
 			  path: "xtsz",
 			  name: "xtsz",
 			  meta: {

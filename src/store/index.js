@@ -59,6 +59,7 @@ export default new Vuex.Store({
 					'hr', 
 					'ai', 
 					'hrOrganize', 
+					'duijiepingtai',
 					'aiOrganize', 
 					'cc', 
 					'CcOrganize',

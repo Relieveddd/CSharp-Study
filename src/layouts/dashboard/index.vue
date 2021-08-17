@@ -256,7 +256,18 @@ export default {
 					F_Icon: "",
 					F_Url: "daochumoban",
 				}]
-			}],
+			},{
+          F_Name: "对接管理",
+          F_Icon: "",
+          F_Url: "",
+          Child: [
+            {
+              F_Name: "对接平台",
+              F_Icon: "",
+              F_Url: "duijiepingtai"
+            }
+          ]
+        }],
       ui: {
         sidebar: true,
         container: true,
