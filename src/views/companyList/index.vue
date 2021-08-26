@@ -61,6 +61,7 @@
 	      >
 	      </el-table-column>
 				<el-table-column show-overflow-tooltip prop="F_CreateDate" label="创建日期"></el-table-column>
+				<el-table-column show-overflow-tooltip prop="F_CompanyCode" label="公司码"></el-table-column>
 				<el-table-column show-overflow-tooltip prop="F_Remark" label="备注"></el-table-column>
 	    </el-table>
 	  </template>

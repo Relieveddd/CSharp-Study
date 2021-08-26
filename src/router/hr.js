@@ -76,6 +76,27 @@ let routes = [
         component: () => import("@/views/personnelProfileEdit")
       },
 			{
+			  path: "zhanghaoguanli",
+			  name: "zhanghaoguanli",
+			  meta: {
+			    title: "账号管理"
+			  }
+			},
+			{
+			  path: "personnelProfileAdd_delete",
+			  name: "personnelProfileAdd_delete",
+			  meta: {
+			    title: "新增账号"
+			  }
+			},
+			{
+			  path: "personnelProfileEdit_delete",
+			  name: "personnelProfileEdit_delete",
+			  meta: {
+			    title: "修改账号"
+			  },
+			},
+			{
 			  path: "yhkGl",
 			  name: "yhkGl",
 			  meta: {

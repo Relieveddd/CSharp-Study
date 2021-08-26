@@ -9,6 +9,7 @@
   >
     <el-table-column type="selection"></el-table-column>
     <el-table-column type="index" label="序号"></el-table-column>
+		<el-table-column prop="f_PlatNo" label="平台编号"></el-table-column>
     <el-table-column prop="f_PlatName" label="平台名称"></el-table-column>
     <el-table-column prop="f_ReMark" label="备注"></el-table-column>
   </el-table>
