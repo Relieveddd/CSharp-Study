@@ -1001,6 +1001,13 @@ let routes = [
 				meta: {
 				  title: "货位画板"
 				}
+			},
+			{
+			  path: "shujugongxiang",
+			  name: "shujugongxiang",
+			  meta: {
+			    title: "数据共享"
+			  }
 			}
     ]
   }
