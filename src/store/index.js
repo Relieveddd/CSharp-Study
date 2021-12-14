@@ -36,6 +36,7 @@ export default new Vuex.Store({
         url:'/HR/Emp/RefreshCache',
         method:'post'
       })
+			console.log(123);
       let res = await request({
         url: "/Base/Module/GetRoleModuleList",
         method: "get"
@@ -93,7 +94,11 @@ export default new Vuex.Store({
 					'gongyingshangzidian',
 					'daorudaochumoban',
 					'daochumoban',
-					'bianmaguize'
+					'bianmaguize',
+					'shengfen',
+					'dijishi',
+					'quxian',
+					'zhenjiedao'
 				])
 			}
       context.commit("set", {

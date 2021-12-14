@@ -559,6 +559,38 @@ let routes = [
 			  },
 			  component: () => import("@/views/bianmaguize")
 			},
+			{
+			  path: "shengfen",
+			  name: "shengfen",
+			  meta: {
+			    title: "省份"
+			  },
+			  component: () => import("@/views/shengfen")
+			},
+			{
+			  path: "dijishi",
+			  name: "dijishi",
+			  meta: {
+			    title: "地级市"
+			  },
+			  component: () => import("@/views/dijishi")
+			},
+			{
+			  path: "quxian",
+			  name: "quxian",
+			  meta: {
+			    title: "区县"
+			  },
+			  component: () => import("@/views/quxian")
+			},
+			{
+			  path: "zhenjiedao",
+			  name: "zhenjiedao",
+			  meta: {
+			    title: "镇街道"
+			  },
+			  component: () => import("@/views/zhenjiedao")
+			}
     ]
   },
   {

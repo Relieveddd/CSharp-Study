@@ -16,14 +16,16 @@ router.beforeEach(async (to, from, next) => {
   if (to.meta.requireAuthorization === false) {
     return next();
   }
-
   if (store.state.user.token) {
+		console.log(777, store.state.user.token, to.meta.requirePermissionCheck );
     if (to.meta.requirePermissionCheck === false) {
       return next();
     }
+		console.log(777, store.state.user.token);
     if (!store.state.permissionStatus) {
       let loadingInstance = Loading.service()
       try {
+				
         await store.dispatch("getPermission");
       } catch (error) {
         next({

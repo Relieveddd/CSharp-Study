@@ -1008,6 +1008,27 @@ let routes = [
 			  meta: {
 			    title: "数据共享"
 			  }
+			},
+			{
+			  path: "kaoshitimu",
+			  name: "kaoshitimu",
+			  meta: {
+			    title: "考试题目"
+			  }
+			},
+			{
+			  path: "kaoshifangjian",
+			  name: "kaoshifangjian",
+			  meta: {
+			    title: "考试房间"
+			  }
+			},
+			{
+			  path: "shijuanguize",
+			  name: "shijuanguize",
+			  meta: {
+			    title: "试卷规则"
+			  }
 			}
     ]
   }

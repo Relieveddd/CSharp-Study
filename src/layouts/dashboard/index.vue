@@ -267,6 +267,32 @@ export default {
               F_Url: "duijiepingtai"
             }
           ]
+        },{
+          F_Name: "地址管理",
+          F_Icon: "",
+          F_Url: "",
+          Child: [
+            {
+              F_Name: "省份",
+              F_Icon: "",
+              F_Url: "shengfen"
+            },
+						{
+						  F_Name: "地级市",
+						  F_Icon: "",
+						  F_Url: "dijishi"
+						},
+						{
+						  F_Name: "区县",
+						  F_Icon: "",
+						  F_Url: "quxian"
+						},
+						{
+						  F_Name: "镇街道",
+						  F_Icon: "",
+						  F_Url: "zhenjiedao"
+						}
+          ]
         }],
       ui: {
         sidebar: true,
