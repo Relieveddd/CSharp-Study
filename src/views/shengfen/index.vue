@@ -10,7 +10,7 @@
 		<template v-slot:action-right>
 			<el-button  @click = "add">新增</el-button>
 			<el-button  @click="edit">修改</el-button>
-			<el-popover
+			<!-- <el-popover
 			  placement="top"
 			  width="160"
 			  v-model="visibleRemove">
@@ -20,7 +20,7 @@
 			    <el-button type="primary" size="mini" @click="remove">确定</el-button>
 			  </div>
 			  <el-button slot="reference">删除</el-button>
-			</el-popover>
+			</el-popover> -->
 		</template>
 		<template v-slot:table>
 			<tableList @rowClick="rowClick" @orderBy = "orderBy"  :list = "tableList" v-loading="loading" @selectData = "selectData"></tableList>
