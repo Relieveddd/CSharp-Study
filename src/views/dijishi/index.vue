@@ -169,7 +169,7 @@
         // this.form.F_ComId = 
         this.loading = true
         let res = await this.$_request({
-          url: "/vehicle/addr/City/Change",
+          url: "/addr/City/Change",
           method: "post",
           data: this.form
         })
