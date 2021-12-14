@@ -2,9 +2,9 @@
 	<mm-atp palign="right">
 		<template v-slot:action-left>
 			<el-col :span="18">
-				<!-- <el-input placeholder="请输入内容" v-model="keyword" class="input-with-select" @keyup.enter.native="search">
+				<el-input placeholder="请输入内容" v-model="keyword" class="input-with-select" @keyup.enter.native="search">
 				    <el-button slot="append" icon="el-icon-search" @click="search(true)"></el-button>
-				</el-input> -->
+				</el-input>
 			</el-col>
 		</template>
 		<template v-slot:action-right>
@@ -135,29 +135,9 @@
 			},
 			async search(noSearch) {
 				this.keyword = this.keyword.replace(/\s+/g,"");
-				if(this.keyword) {
-					this.loading = true
-					let res = await this.$_request({
-						url: "/map/Order/ListSearch",
-						method: 'post',
-						data: {
-							pageIndex: noSearch ? 1 : this.pageIndex,
-							pageSize: this.pageSize,
-							key: this.keyword
-						}
-					})
-					if(res.data.code === 200) {
-						this.loading = false
-						this.record = res.data.record
-						this.tableList = res.data.data
-						if(noSearch) {
-							this.$refs.bottom.resetIndex()
-						}
-					}
-				}else{
-					this.pageIndex = 1;
-					this.getList()
-				}
+				this.pageIndex = 1;
+				this.getList()
+				
 			},
 			add() {
         this.form = form()
@@ -192,7 +172,7 @@
 					data: {
 						pageIndex: this.pageIndex,
 						pageSize: this.pageSize,
-						
+						name: this.keyword
 					}
 				})
 				if(res.data.code === 200) {
@@ -233,11 +213,7 @@
 			},
 			pageIndexChange(e){
 				this.pageIndex = e
-				if(this.keyword ) {
-					this.search()
-				}else{
-					this.getList()
-				}
+				this.getList()
 			},
 			selectData(e) {
 				this.selectArr = e
