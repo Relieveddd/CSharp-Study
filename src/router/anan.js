@@ -708,6 +708,90 @@ let routes = [
 			  }
 			},
 			{
+			  path: "kaoqinguize",
+			  name: "kaoqinguize",
+			  meta: {
+			    title: "考勤规则"
+			  }
+			},
+			{
+			  path: "jiaqiguanli",
+			  name: "jiaqiguanli",
+			  meta: {
+			    title: "法定假期管理"
+			  }
+			},
+			{
+			  path: "jiabanguanli",
+			  name: "jiabanguanli",
+			  meta: {
+			    title: "加班管理"
+			  }
+			},
+			{
+			  path: "daixinjia",
+			  name: "daixinjia",
+			  meta: {
+			    title: "带薪假期管理"
+			  }
+			},
+			{
+			  path: "chuchaiguanli",
+			  name: "chuchaiguanli",
+			  meta: {
+			    title: "出差管理"
+			  }
+			},
+			{
+			  path: "buqianguize",
+			  name: "buqianguize",
+			  meta: {
+			    title: "考勤补签规则"
+			  }
+			},
+			{
+			  path: "jiaqichaxun",
+			  name: "jiaqichaxun",
+			  meta: {
+			    title: "可休假期查询"
+			  }
+			},
+			{
+			  path: "tiaoxiuguanli",
+			  name: "tiaoxiuguanli",
+			  meta: {
+			    title: "调休管理"
+			  }
+			},
+			{
+			  path: "tiaoxiuguanli",
+			  name: "tiaoxiuguanli",
+			  meta: {
+			    title: "调休管理"
+			  }
+			},
+			{
+			  path: "waichuguanli",
+			  name: "waichuguanli",
+			  meta: {
+			    title: "外出管理"
+			  }
+			},
+			{
+			  path: "jiabanshenqing",
+			  name: "jiabanshenqing",
+			  meta: {
+			    title: "加班申请"
+			  }
+			},
+			{
+			  path: "kaoqinbuqian",
+			  name: "kaoqinbuqian",
+			  meta: {
+			    title: "考勤补签"
+			  }
+			},
+			{
 			  path: "ceshi",
 			  name: "ceshi",
 			  meta: {
