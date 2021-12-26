@@ -58,8 +58,10 @@ export default new Vuex.Store({
 			if(menuList.includes('admin')) {
 				menuList = menuList.concat([
 					'hr', 
+					'dt',
 					'ai', 
 					'hrOrganize', 
+					'dtOrganize', 
 					'duijiepingtai',
 					'aiOrganize', 
 					'cc', 
@@ -72,6 +74,7 @@ export default new Vuex.Store({
 					'companyListAA',
 					'companyListWMS',
 					'companyListWMS_gys',
+					'companyList_dt',
 					'companyListAI',
 					'companyListYL',
 					'syzn',

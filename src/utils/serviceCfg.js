@@ -1,6 +1,7 @@
 
 export default{
 	hr: 'd4ec436e088c48078260bb67348b1a8a',
+	dt: '48E7B446-17A2-49BB-A406-D0D33A6C8C91',
 	aa: '3ba7cebcffcc4d368716320bc4f91add',
 	ai: 'c82e8906896c4ee381b7063b7c60d85c',
 	cc: '565ebc6d6c4b4780953ad8115dd38eb8',//智慧消防管理系统

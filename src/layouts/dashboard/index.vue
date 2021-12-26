@@ -151,6 +151,23 @@ export default {
 					F_Url: "companyListWMS_gys",
 				}]
 			},{
+				F_Name: "答题系统管理平台",
+				F_Icon: "",
+				F_Url: "",
+				Child: [{
+					F_Name: "答题系统管理",
+					F_Icon: "",
+					F_Url: "dt",
+				},{
+					F_Name: "答题组织管理",
+					F_Icon: "",
+					F_Url: "dtOrganize",
+				},{
+					F_Name: "答题公司列表",
+					F_Icon: "",
+					F_Url: "companyList_dt",
+				}]
+			},{
 				F_Name: "微服务管理",
 				F_Icon: "",
 				F_Url: "xtsz",

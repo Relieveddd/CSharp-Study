@@ -176,6 +176,14 @@ let routes = [
 			  component: () => import("@/views/companyList")
 			},
 			{
+			  path: "companyList_dt",
+			  name: "companyList_dt",
+			  meta: {
+			    title: "dt公司列表"
+			  },
+			  component: () => import("@/views/companyList_dt")
+			},
+			{
 			  path: "companyListAA",
 			  name: "companyListAA",
 			  meta: {
@@ -312,6 +320,14 @@ let routes = [
 			  component: () => import("@/views/hrOrganize")
 			},
 			{
+			  path: "dtOrganize",
+			  name: "dtOrganize",
+			  meta: {
+			    title: "hr组织结构"
+			  },
+			  component: () => import("@/views/dtOrganize")
+			},
+			{
 			  path: "aiOrganize",
 			  name: "aiOrganize",
 			  meta: {
@@ -359,6 +375,14 @@ let routes = [
         },
         component: () => import("@/views/adminHr")
       },
+			{
+			  path: "dt",
+			  name: "dt",
+			  meta: {
+			    title: "dt系统管理"
+			  },
+			  component: () => import("@/views/adminDt")
+			},
 			{
 			  path: "ai",
 			  name: "ai",
