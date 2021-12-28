@@ -1029,6 +1029,13 @@ let routes = [
 			  meta: {
 			    title: "试卷规则"
 			  }
+			},
+			{
+			  path: "zhishileixing",
+			  name: "zhishileixing",
+			  meta: {
+			    title: "知识类型"
+			  }
 			}
     ]
   }
