@@ -412,7 +412,7 @@ export default {
         data: {
           pageIndex: 1,
           pageSize: 9999,
-					queryjson: JSON.stringify({mtype: 1})
+					queryjson: ""
         }
       });
 			this.treeData = res.data.data
