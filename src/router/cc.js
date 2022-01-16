@@ -562,6 +562,20 @@ let routes = [
 			  }
 			},
 			{
+			  path: "qc_baofeidan",
+			  name: "qc_baofeidan",
+			  meta: {
+			    title: '器材-报废单'
+			  }
+			},
+			{
+			  path: "qc_liangshaidan",
+			  name: "qc_liangshaidan",
+			  meta: {
+			    title: '器材-晾晒单'
+			  }
+			},
+			{
 			  path: "qc_wgcigoudan",
 			  name: "qc_wgcigoudan",
 			  meta: {
