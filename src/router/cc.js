@@ -37,6 +37,13 @@ let routes = [
 			  }
 			},
 			{
+				path: "feiyongleixing",
+				name: "feiyongleixing",
+				meta: {
+					title: "费用类型"
+				}
+			},
+			{
 			  path: "kemuminglu",
 			  name: "kemuminglu",
 			  meta: {
