@@ -66,6 +66,7 @@ export default {
     display: flex;
     align-items: center;
     border-left: solid 2px transparent;
+
     .icon {
       width: 50px;
       text-align: center;
@@ -73,24 +74,29 @@ export default {
       line-height: 1;
       color: currentColor;
     }
+
     .title {
       flex: 1;
       font-size: 14px;
       margin-right: 12px;
     }
+
     .more {
       font-size: 18px;
       margin-right: 12px;
     }
   }
+
   &:hover {
     > .menu {
       background: #409eff;
     }
+
     > .children {
       visibility: visible;
     }
   }
+
   .children {
     visibility: hidden;
     position: absolute;
@@ -100,6 +106,7 @@ export default {
     background: #505b7e;
     transform: translateX(100%);
     box-shadow: 1px 0px 4px 0 rgba(0, 0, 0, 0.08);
+
     &::-webkit-scrollbar-track {
       background: #505b7e;
     }
