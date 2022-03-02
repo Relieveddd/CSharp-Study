@@ -95,7 +95,7 @@ export default {
     visibility: hidden;
     position: absolute;
     top: 0;
-    right: 0px;
+    right: 10px;
     height: 100%;
     background: #505b7e;
     transform: translateX(100%);
