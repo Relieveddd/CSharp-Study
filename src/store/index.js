@@ -101,7 +101,8 @@ export default new Vuex.Store({
 					'shengfen',
 					'dijishi',
 					'quxian',
-					'zhenjiedao'
+					'zhenjiedao',
+          'kanban'
 				])
 			}
       context.commit("set", {

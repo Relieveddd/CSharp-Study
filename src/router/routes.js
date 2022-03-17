@@ -614,7 +614,15 @@ let routes = [
 			    title: "镇街道"
 			  },
 			  component: () => import("@/views/zhenjiedao")
-			}
+			},
+      {
+        path: "kanban",
+        name: "kanban",
+        meta: {
+          title: "看板"
+        },
+        component: () => import("@/views/kanban")
+      }
     ]
   },
   {

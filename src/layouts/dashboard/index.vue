@@ -310,7 +310,12 @@ export default {
 						  F_Url: "zhenjiedao"
 						}
           ]
-        }],
+        },
+        {
+				F_Name: "看板",
+				F_Icon: "",
+				F_Url: "kanban"
+			}],
       ui: {
         sidebar: true,
         container: true,
