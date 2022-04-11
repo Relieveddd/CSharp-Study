@@ -1,9 +1,7 @@
 <template>
   <div>
-    <tableList :style="{height: 'calc(100vh - '+tabHeight+'px)'}" :list="tableList" v-loading="loading"
-               @selectData="selectData"></tableList>
+    <tableList :style="{height: 'calc(100vh - '+tabHeight+'px)'}" :list="tableList" v-loading="loading" @selectData="selectData"></tableList>
     <bottom :style="{height: 103 + bottomHeight + 'px'}" :record="record" @pageIndexChange="pageIndexChange"></bottom>
-
   </div>
 </template>
 
@@ -34,7 +32,6 @@ export default {
     bottom
   },
   data() {
-
     return {
       value: "",
       select: "1",
@@ -90,6 +87,7 @@ export default {
         }
       })
       if (res.data.code === 200) {
+        // console.log(res);
         this.loading = false
         this.record = res.data.record
         this.tableList = res.data.data
