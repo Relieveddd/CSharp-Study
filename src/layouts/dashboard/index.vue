@@ -1,5 +1,5 @@
 <template>
-  <div :class="$style['wrap']" v-loading="ui.loading">
+  <!-- <div :class="$style['wrap']" v-loading="ui.loading">
     <c-header @toggleSidebar="onToggleSidebar"></c-header>
     <div :class="$style['mainer']">
       <c-sidebar :tree="menuTree" :isShow.sync="ui.sidebar"></c-sidebar>
@@ -8,13 +8,13 @@
         <div
           :class="[$style['container'], { [$style['padding']]: ui.padding }]"
         >
-          <keep-alive :include="tabCacheList" :exclude="refreshTabName">
+          <keep-alive :include="tabCacheList" :exclude="refreshTabName"> -->
             <router-view v-if="ui.container"></router-view>
-          </keep-alive>
+         <!-- </keep-alive>
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </template>
 
 <script>
