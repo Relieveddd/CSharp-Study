@@ -1,0 +1,109 @@
+.muisc-list {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 300px;
+  height: 500px;
+  border: 2px solid var(--theme-color-eleven);
+  background-color: var(--theme-color-one);
+  flex-direction: column;
+  transform: translateY(-100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+  .top {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+    .wzry-guanbi {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      display: inline-block;
+      transition: all var(--time-250);
+
+      &:hover {
+        transform: rotate(180deg);
+        text-shadow: var(--shine-10), var(--shine-20);
+      }
+    }
+
+    .title {
+      font-size: 24px;
+    }
+  }
+
+  .list {
+    display: flex;
+    overflow: auto;
+    width: 100%;
+    flex: 1;
+    flex-direction: column;
+
+    .card {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 50px;
+      padding: 0 10px;
+
+      &:hover {
+        text-shadow: var(--shine-15) !important;
+
+        .left {
+          transition: all 0s;
+          transform: translateX(10px);
+        }
+
+        &::after {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          width: 100%;
+          height: 100%;
+          background-color: #347cb6;
+          filter: blur(15px);
+          content: "";
+        }
+      }
+
+      .left {
+        display: flex;
+        align-items: center;
+        transition: all var(--time-250);
+
+        .num {
+          width: 25px;
+        }
+      }
+
+      .time {
+        margin-left: auto;
+        justify-self: flex-end;
+      }
+
+      &:hover {
+        background-color: var(--theme-color-four);
+      }
+    }
+  }
+}
+
+.active {
+  color: var(--blue) !important;
+  text-shadow: var(--shine-15) !important;
+}
+
+.muisc-list-enter-from,
+.muisc-list-leave-active {
+  clip-path: polygon(50% 100%, 50% 100%, 100% 100%, 0% 100%) !important;
+}
+
+.muisc-list-leave-active,
+.muisc-list-enter-active {
+  transition: all var(--time-250);
+}

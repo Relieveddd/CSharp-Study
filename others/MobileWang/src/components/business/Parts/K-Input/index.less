@@ -1,0 +1,60 @@
+.form-input {
+  position: relative;
+  display: flex;
+
+  input {
+    width: 100%;
+    padding: 0 0.25em;
+    border: none;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    outline: none;
+    text-shadow: var(--t-shadow-d);
+    background-color: transparent;
+
+    &::placeholder {
+      text-shadow: var(--t-shadow-d);
+    }
+  }
+
+  .border,
+  .focus {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: 1px;
+    background-color: var(--red);
+    transition: all var(--time-500);
+  }
+
+  .focus {
+    background-color: var(--theme-color-four);
+  }
+
+  .tip {
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    color: var(--red);
+    font-size: 16px;
+    transform: translateY(125%);
+    transform-origin: center top;
+  }
+}
+
+.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.tip-enter-from,
+.tip-leave-active {
+  transform-origin: top center;
+  transform: translateY(125%) scaleY(0) !important;
+}
+
+.tip-enter-active,
+.tip-leave-active {
+  transition: all var(--time-250);
+}

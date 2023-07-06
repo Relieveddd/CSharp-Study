@@ -1,0 +1,54 @@
+.skin-voice {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  flex-direction: column;
+  padding-right: 10px;
+
+  .voice {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    color: var(--white);
+    white-space: nowrap;
+    transition: all var(--time-250) ease-in-out;
+
+    &:hover {
+      color: var(--blue);
+      text-shadow: var(--shine-20);
+      transition: all 0s;
+
+      .content {
+        .iconfont {
+          color: var(--blue);
+        }
+      }
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      .text {
+        width: 100%;
+        padding: 15px;
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+.active-width {
+  transform: rotateX(25deg) scaleX(0.9) !important;
+}
+
+.active-color {
+  color: var(--blue) !important;
+  text-shadow: var(--shine-20);
+}

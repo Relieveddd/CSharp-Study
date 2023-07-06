@@ -1,0 +1,51 @@
+.epigraph-tool {
+  overflow: auto;
+  padding: 20px 0;
+  border-bottom: var(--subline);
+
+  .epigraph-category {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0.35em 0;
+
+    img {
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 11.15%;
+      height: 150%;
+      transition: all var(--time-250);
+    }
+
+    .title {
+      position: relative;
+      color: var(--theme-color-five);
+      text-align: center;
+      transition: all var(--time-250) 0.1s;
+      flex: 1;
+      border-right: var(--subline);
+
+      span {
+        font-size: 26px;
+      }
+    }
+  }
+
+  @media screen and (max-width: @medium) {
+    img {
+      display: none;
+    }
+
+    .epigraph-category {
+      .title {
+        min-width: 100px;
+      }
+    }
+  }
+}
+
+.active {
+  color: var(--white) !important;
+  text-shadow: var(--shine-15);
+}

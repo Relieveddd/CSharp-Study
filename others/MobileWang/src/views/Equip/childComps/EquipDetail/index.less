@@ -1,0 +1,167 @@
+.equip-detail {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  overflow: auto;
+  width: 30%;
+  height: 100%;
+  padding-left: 20px;
+  transition: all 0.25s;
+  opacity: 0;
+  line-height: 1.25;
+
+  .name {
+    margin-bottom: 1em;
+    color: var(--theme-color-nine);
+    font-size: 26px;
+  }
+
+  .info {
+    margin-bottom: 20px;
+  }
+
+  .details {
+    .motivation {
+      margin-bottom: 25px;
+
+      .title {
+        margin-bottom: 5px;
+        color: var(--white);
+        font-family: var(--font-f);
+      }
+
+      .desc,
+      .time {
+        color: var(--theme-color-five);
+        font-family: var(--font-f);
+      }
+    }
+  }
+
+  .note {
+    color: var(--white-25);
+    font-family: var(--font-f);
+  }
+
+  @media screen and (max-width: 1535px) {
+    width: 180px;
+  }
+
+  @media screen and (max-width: 1120px) {
+    left: 0;
+    width: 100%;
+    height: initial;
+    padding: 10px;
+    background-color: var(--black-25);
+    backdrop-filter: blur(5px);
+  }
+}
+
+.show {
+  transition: all 0.5s;
+  opacity: 1;
+}
+
+.common,
+.zdsm,
+.hx,
+.ys,
+.gjsd,
+.lqsj,
+.wlxx,
+.wlgj,
+.bjl,
+.wlfy,
+.fsxx,
+.zdfl,
+.hl,
+.fsfy,
+.fsgj,
+.lq {
+  @size: 16px;
+
+  height: @size;
+  margin-bottom: 5px;
+  padding-left: 22px;
+  color: var(--theme-color-nine);
+  font-size: 16px;
+  font-family: var(--font-f);
+  background-repeat: no-repeat;
+  background-size: contain;
+  line-height: 1;
+}
+
+.zdsm {
+  //最大生命
+  background-image: url("@{IMGBED}/image/equip_zdsm.png");
+}
+
+.hx {
+  //每5秒回血
+  background-image: url("@{IMGBED}/image/equip_hx.png");
+}
+
+.ys {
+  //移速
+  background-image: url("@{IMGBED}/image/equip_ys.png");
+}
+
+.gjsd {
+  //攻击速度
+  background-image: url("@{IMGBED}/image/equip_gjsd.png");
+}
+
+.lqsj {
+  //冷却缩减
+  background-image: url("@{IMGBED}/image/equip_lqsj.png");
+}
+
+.wlxx {
+  //物理吸血
+  background-image: url("@{IMGBED}/image/equip_wlxx.png");
+}
+
+.wlgj {
+  //物理攻击
+  background-image: url("@{IMGBED}/image/equip_wlgj.png");
+}
+
+.bjl {
+  //暴击率
+  background-image: url("@{IMGBED}/image/equip_bjl.png");
+}
+
+.wlfy {
+  //物理防御
+  background-image: url("@{IMGBED}/image/equip_wlfy.png");
+}
+
+.fsxx {
+  //法术吸血
+  background-image: url("@{IMGBED}/image/equip_fsxx.png");
+}
+
+.zdfl {
+  //最大法力
+  background-image: url("@{IMGBED}/image/equip_zdfl.png");
+}
+
+.hl {
+  //每5秒回蓝
+  background-image: url("@{IMGBED}/image/equip_hl.png");
+}
+
+.fsfy {
+  //法术防御
+  background-image: url("@{IMGBED}/image/equip_fsfy.png");
+}
+
+.fsgj {
+  //法术攻击
+  background-image: url("@{IMGBED}/image/equip_fsgj.png");
+}
+
+.lq {
+  //冷却时间
+  background-image: url("@{IMGBED}/image/equip_lq.png");
+}

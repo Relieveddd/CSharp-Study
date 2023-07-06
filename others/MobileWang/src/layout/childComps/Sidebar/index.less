@@ -1,0 +1,48 @@
+.side-bar {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  width: 215px;
+  height: 100%;
+  transition: all var(--time-500);
+  flex-direction: column;
+  border-right: var(--subline);
+
+  .slider {
+    position: absolute;
+    width: 100%;
+    height: 75px;
+    transform: translateY(-10px);
+    transition: all var(--time-500);
+    pointer-events: none;
+    background-image: linear-gradient(225deg, rgb(34 58 94 / 0%) 10%, rgb(34 130 199 / 35%) 100%);
+    -webkit-mask: linear-gradient(
+      transparent 0,
+      #000 15px,
+      #000 calc(100% - 15px),
+      transparent 100%
+    );
+  }
+}
+
+/* 折叠侧边栏 */
+.collapse {
+  width: 80px;
+
+  .game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+
+    .iconfont {
+      margin-right: 10px;
+      color: var(--theme-color-five);
+      font-size: 50px;
+    }
+
+    span {
+      display: none;
+    }
+  }
+}

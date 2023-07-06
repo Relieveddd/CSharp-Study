@@ -1,0 +1,39 @@
+.btn-icon {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  flex: 1;
+
+  .iconfont {
+    color: var(--theme-color-five);
+    font-size: 35px;
+    text-shadow: var(--t-shadow-e);
+  }
+
+  .wzry-setting {
+    display: inline-block;
+    transition: all var(--time-500);
+
+    &:hover {
+      color: var(--white);
+      transform: rotate(180deg);
+      text-shadow: var(--shine-15);
+    }
+  }
+
+  .wzry-gengxinrizhi {
+    display: inline-block;
+    transition: all var(--time-250);
+
+    &:hover {
+      color: var(--white);
+      text-shadow: var(--shine-15);
+    }
+  }
+}
+
+.fade-enter-active {
+  transition: all 0.25s !important;
+}

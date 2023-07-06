@@ -1,0 +1,87 @@
+.menu {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  font-size: 20px;
+  flex-direction: column;
+  cursor: pointer;
+  border-bottom: var(--subline);
+
+  .menu-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0.5em 1em;
+    color: var(--theme-color-five);
+    font-size: 20px;
+    text-shadow: var(--t-shadow-e);
+    transition: all var(--time-500);
+
+    &:hover {
+      color: var(--blue);
+      text-shadow: var(--shine-10);
+
+      .name,
+      .iconfont {
+        transition: all 0s !important;
+        pointer-events: none;
+      }
+    }
+
+    .iconfont {
+      margin-right: 15px;
+      font-size: 35px;
+      transition: all var(--time-250) ease-out;
+    }
+
+    .name {
+      font-size: 20px;
+      transition: all var(--time-250) ease-out;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 25px;
+      transition: all var(--time-250);
+      pointer-events: none;
+      transform: translate(-100%, -50%);
+    }
+  }
+}
+
+.collapse {
+  span {
+    opacity: 0;
+  }
+
+  .menu-item .arrow {
+    display: none;
+  }
+}
+
+.active {
+  position: relative;
+  left: 0;
+  color: var(--white) !important;
+  text-shadow: var(--shine-10) !important;
+}
+
+.arrow-active {
+  transform: translate(-100%, -50%) rotate(180deg) !important;
+}
+
+/* 进入前状态 */
+.menu-list-enter-from,
+.menu-list-leave-active {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+/* 进入和离开动画属性 */
+.menu-list-leave-active,
+.menu-list-enter-active {
+  transition: all var(--time-250);
+}

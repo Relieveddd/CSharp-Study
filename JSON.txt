@@ -1,0 +1,58 @@
+
+{
+    f_CarEquip:"",
+    f_Id:"37ed0dd4-df9a-4942-9c85-c083f696dca9",
+    f_InspectDate:"",
+    f_ObjType:"",
+    f_PersonEquip:[],
+    f_WBData:[
+        {
+            f_MaintName: "	 留站住宿制度"
+            f_MaintType: 1
+            f_WBPart: [
+                {
+                    f_Id: "0802f85a-1122-41e3-a64c-58b1641681ea",
+                    f_MaintName: "留站住宿制度",
+                    f_MaintType: 2,
+                    f_WBContent:[
+                        {
+                            f_Id: "e78ac0c7-84fc-496f-a78f-7aa2207a9240",
+                            f_MaintName: "大队领导每半月深入分包队站留站住宿不少于一次，且每季度要到全部队站留站住宿一遍。",
+                            f_MaintType: 3,
+                            f_WBClusion: 1,
+                            f_WBImage: [
+			{
+			f_src:"ajdlajkdlajda.png",
+			f_type:0,		//0表示图片，1表示视频
+			}
+		],
+                            f_WBOtherProblems:[],
+                            f_WBProblem:[]
+                        },
+                        {
+                            f_Id: "5cdcf6ae-0920-4f42-a34b-8928720a7952",
+                            f_MaintName: "期间应与指战员同进餐、同活动、同住宿、同点名、同出操、同检查执勤战备，每次与不少于3名队员开展谈心谈",
+                            f_MaintType: 3,
+                            f_WBClusion: 1,
+                            f_WBImage: [
+			{
+			f_src:"ajdlajkdlajda.png",
+			f_type:0,		//0表示图片，1表示视频
+			}
+		],
+                            f_WBOtherProblems:[],
+                            f_WBProblem:[]
+                        }
+                    ]
+                }
+            ]
+            f_WBProj: "34d3344b-8c51-4baf-ae97-91e4e2721efe"
+        }
+    ],
+    f_WBEmpIds: "6a37ebfe-e65c-473d-a156-2ebd298b13d6",
+    f_WBEmpNames: "杨柳",
+    f_WBObject: "",
+    f_WBObjectName: "",
+    f_WBState: 2
+    f_WBType: "2dfec62a-f310-4e95-bd31-f4d8bbd1d866"
+}

@@ -1,0 +1,24 @@
+.hero-skin-price {
+  display: flex;
+  align-items: center;
+  filter: var(--d-shadow-b);
+  transition: all var(--time-500);
+  opacity: 0;
+  transform: translateX(100%);
+
+  img {
+    width: 40px;
+    margin-right: 10px;
+    vertical-align: bottom;
+  }
+
+  span {
+    font-size: 40px;
+    text-shadow: var(--t-shadow-e);
+  }
+}
+
+.show {
+  transform: translateX(0);
+  opacity: 1;
+}

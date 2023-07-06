@@ -1,0 +1,41 @@
+.hero-basic {
+  display: flex;
+  flex-direction: column;
+
+  .info {
+    display: flex;
+    width: 555px;
+    padding-bottom: 5px;
+    font-size: 35px;
+    text-shadow: var(--t-shadow-e);
+    transition: all var(--time-1000);
+    opacity: 0;
+    transform: translateX(-100%);
+    border-bottom: 1px solid var(--white-50);
+
+    &:not(:last-child) {
+      margin-bottom: 1em;
+    }
+
+    .iconfont {
+      margin-right: 5px;
+      color: var(--white-75);
+      font-size: inherit;
+    }
+
+    .label {
+      color: var(--white-75);
+    }
+
+    .name {
+      color: var(--white);
+    }
+  }
+
+  @media screen and (max-width: @large) {
+    .info {
+      width: 375px;
+      font-size: 28px;
+    }
+  }
+}

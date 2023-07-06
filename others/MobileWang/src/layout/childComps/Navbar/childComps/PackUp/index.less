@@ -1,0 +1,19 @@
+.wzry-packup {
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 20px;
+  color: var(--theme-color-five);
+  font-size: 35px;
+  text-shadow: var(--t-shadow-e);
+  transition: all var(--time-250);
+
+  &:hover {
+    color: var(--white);
+    text-shadow: var(--shine-15) !important;
+  }
+}
+
+.wzry-packup.is-active {
+  transform: rotate(180deg);
+  text-shadow: var(--t-shadow-a);
+}

@@ -1,0 +1,35 @@
+.options {
+  display: flex;
+  overflow-y: auto;
+  width: 100%;
+  margin-bottom: 10px;
+  flex-direction: column;
+  flex: 1;
+
+  .option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin-bottom: 25px;
+    border-bottom: var(--subline);
+
+    .label {
+      display: flex;
+      align-items: center;
+      font-size: 26px;
+      text-shadow: var(--t-shadow-e);
+    }
+
+    .input {
+      &::placeholder {
+        color: var(--theme-color-eleven);
+      }
+    }
+
+    .id {
+      color: var(--white-25);
+      font-size: 26px;
+    }
+  }
+}

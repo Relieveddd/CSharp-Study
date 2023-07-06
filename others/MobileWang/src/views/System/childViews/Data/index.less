@@ -1,0 +1,74 @@
+.data {
+  position: relative;
+  overflow: auto;
+  height: 100%;
+  text-shadow: var(--t-shadow-e);
+
+  .update,
+  .export,
+  .check,
+  .replace {
+    margin-right: 20px;
+    padding: 0.5em 1em;
+    border-radius: 7px;
+    box-shadow: var(--b-shadow-c);
+    color: #fff;
+    font-size: 22px;
+    text-shadow: var(--t-shadow-d);
+    transition: all 0.5s;
+
+    &:hover {
+      text-shadow: var(--shine-15), var(--shine-25);
+      transition: all 0s;
+    }
+
+    &:active {
+      box-shadow: none !important;
+      text-shadow: none;
+      transition: all 0.1s;
+      opacity: 0.75;
+      transform-origin: bottom center;
+      transform: scale(0.95);
+    }
+  }
+
+  .update {
+    @color: rgb(242 156 18 / 75%);
+
+    background-color: @color;
+
+    &:hover {
+      box-shadow: var(--shine-25) @color, var(--shine-50) @color;
+    }
+  }
+
+  .export {
+    @color: rgb(41 127 185 / 75%);
+
+    background-color: @color;
+
+    &:hover {
+      box-shadow: var(--shine-25) @color, var(--shine-50) @color;
+    }
+  }
+
+  .check {
+    @color: rgb(39 174 95 / 75%);
+
+    background-color: @color;
+
+    &:hover {
+      box-shadow: var(--shine-25) @color, var(--shine-50) @color;
+    }
+  }
+
+  .replace {
+    @color: rgb(231 77 60 / 75%);
+
+    background-color: @color;
+
+    &:hover {
+      box-shadow: var(--shine-25) @color, var(--shine-50) @color;
+    }
+  }
+}

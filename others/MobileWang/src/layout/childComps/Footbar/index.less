@@ -1,0 +1,30 @@
+.footbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  border-top: var(--subline);
+
+  &:hover {
+    .line {
+      opacity: 1;
+    }
+  }
+
+  .music-play {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    height: 25%;
+    background-color: var(--theme-color-five);
+    opacity: 0;
+  }
+}

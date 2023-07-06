@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "方正正准黑";
+  src: url("@{IMGBED}/font/wzry.ttf");
+}
+
+* {
+  user-select: none;
+  font-family: "方正正准黑";
+}
+
+/* 滚动条整体背景 */
+*::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+  background-color: var(--black-50);
+}
+
+/* 滚动条里面可以拖动的那部分 */
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: var(--theme-color-five);
+}
+
+body {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  color: var(--white);
+  background-color: #000;
+  transition: all var(--time-500);
+  cursor: url("@{IMGBED}/cursor/default.png"), auto;
+}
+
+input {
+  cursor: url("@{IMGBED}/cursor/text.png"), auto;
+}
+
+input[type="range"],
+input ::-webkit-slider-thumb,
+button,
+a {
+  cursor: url("@{IMGBED}/cursor/pointer.png"), auto;
+}
+
+a {
+  color: var(--white);
+}

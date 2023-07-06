@@ -1,0 +1,86 @@
+/* 鼠标样式 */
+.cursor-default {
+  cursor: url("@{IMGBED}/cursor/default.png"), auto;
+}
+
+.cursor-pointer {
+  cursor: url("@{IMGBED}/cursor/pointer.png"), auto;
+}
+
+.cursor-not-allowed {
+  cursor: url("@{IMGBED}/cursor/not-allowed.png"), auto;
+}
+
+.cursor-text {
+  cursor: url("@{IMGBED}/cursor/text.png"), auto;
+}
+
+/* 文字渐变 */
+.text-gradient-one {
+  color: transparent;
+  background: linear-gradient(115deg, #4d6b8f 0%, #8097bb 89%);
+  background-clip: text;
+}
+
+/* 溢出省略号显示单行 */
+.lib-one-line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: break-all;
+}
+
+/* 溢出省略号显示多行 */
+.lib-two-line,
+.lib-three-line {
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.lib-two-line {
+  -webkit-line-clamp: 2;
+}
+
+.lib-three-line {
+  -webkit-line-clamp: 3;
+}
+
+/* 布局 */
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 白色滚动条 */
+.scroll-white::-webkit-scrollbar {
+  width: 3px;
+  background: transparent;
+}
+
+.scroll-white::-webkit-scrollbar-thumb {
+  background: var(--white-25);
+}
+
+.scroll-white::-webkit-scrollbar-thumb:hover {
+  background: rgb(255 255 255 / 35%);
+}
+
+.scroll-white::-webkit-scrollbar-thumb:active {
+  background: var(--white-50);
+}
+
+/* 可点击按钮 */
+.lib-click {
+  &:hover {
+    opacity: 0.75;
+  }
+
+  &:active {
+    opacity: 0.5;
+    transform: scale(0.95);
+    transform-origin: bottom center;
+  }
+}

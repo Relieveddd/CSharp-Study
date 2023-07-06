@@ -1,0 +1,64 @@
+.login-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  max-width: 80vw;
+  padding: 50px 75px;
+  border-radius: 25px;
+  box-shadow: 0 0 10px 0 var(--black-75);
+  background: var(--black-50);
+  transition: all 0.25s ease-out;
+  flex-direction: column;
+  transform-style: preserve-3d;
+  transform: translate(-50%, -50%);
+
+  .back {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    display: flex;
+    color: var(--white-50);
+    font-size: 18px;
+
+    .wzry-fanhui {
+      margin-right: 10px;
+      font-size: inherit;
+    }
+
+    span {
+      line-height: 26px;
+    }
+  }
+
+  .logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    transform: translate3d(0, 0, 100px);
+    animation: light 1.5s infinite alternate-reverse ease-out;
+
+    img {
+      width: 100%;
+      @keyframes light {
+        100% {
+          transform: translate3d(0, -20px, 100px);
+          filter: drop-shadow(0 0 15px var(--theme-color-thirteen));
+        }
+      }
+    }
+  }
+
+  .title {
+    margin-bottom: 50px;
+    color: transparent;
+    font-size: 50px;
+    text-shadow: var(--shine-35) #ffd363;
+    background: linear-gradient(155deg, #f6dda5 25%, #ffb700);
+    line-height: 1.1;
+    background-clip: text;
+    transform: translateZ(100px);
+    font-weight: bold;
+  }
+}

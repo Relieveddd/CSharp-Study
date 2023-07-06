@@ -1,0 +1,10 @@
+node_modules
+*.md
+*.woff
+*.ttf
+.vscode
+dist
+public
+.eslintrc.js
+.prettierrc.js
+.eslintrc.cjs

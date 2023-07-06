@@ -1,0 +1,32 @@
+.team {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+  padding: 2px 25px 2px 2px;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  img {
+    max-width: calc(50% - 5px);
+    aspect-ratio: 2.22/1;
+
+    &:nth-child(1) {
+      min-width: 100%;
+    }
+
+    &:nth-last-child(-n + 4) {
+      object-fit: contain;
+    }
+
+    &:hover {
+      outline: 1px solid var(--white);
+    }
+  }
+}
+
+.active {
+  outline: 2px solid var(--blue);
+}
